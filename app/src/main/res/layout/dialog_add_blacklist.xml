@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/titleLayout_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加黑名单号码"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#C6C6C6"
+        />
+
+    <EditText
+        android:id="@+id/addBlacklistDialog_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入拦截号码"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:inputType="phone"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#C6C6C6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/addBlacklistDialog_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+        <RadioButton
+            android:id="@+id/addBlacklistDialog_rb_sms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="短信"
+            android:textColor="@android:color/darker_gray"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/addBlacklistDialog_rb_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="电话"
+            android:textColor="@android:color/darker_gray"
+            />
+
+        <RadioButton
+            android:id="@+id/addBlacklistDialog_rb_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="所有"
+            android:textColor="@android:color/darker_gray"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/addBlacklistDialog_bt_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_selector"
+            />
+        <Button
+            android:id="@+id/addBlacklistDialog_bt_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_selector"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+   <!-- <include
+        layout="@layout/title_layout"
+        ></include>-->
+
+        <!--<TextView
+            style="@style/TitleStyle"
+            android:text="手机卫士"
+            />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/titleLayout_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机卫士"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#C6C6C6"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#7F7F7F"
+        android:text="每一段记忆，都有一个密码。只要时间，地点，人物组合正确，无论尘封多久，那人那景都将在遗忘中重新拾起。你也许会说“不是都过去了吗？”其实过去的只是时间，你依然逃不出，想起了就微笑或悲伤的宿命，那种宿命本叫“无能为力"/>
+
+
+
+
+    <!--android:numColumns="3"表示设置为3列显示-->
+    <!--android:verticalSpacing="50dp"表设置上下子条目之间的间距-->
+    <GridView
+        android:id="@+id/gv_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="50dp"
+        android:layout_marginTop="30dp"
+        ></GridView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+           android:duration="200"
+           android:fromXDelta="0"
+           android:toXDelta="-100%"
+           android:fromYDelta="0"
+           android:toYDelta="0"
+    >
+
+    <!--下一步 按钮的 页面出去的平移动画 -->
+
+    <!--
+     android:duration="500"  表示动画执行的时间为500毫秒
+           android:fromXDelta="0"  表示开始动画X轴，0表示手机屏幕的左上角
+           android:toXDelta="-100%"  -100表示结束动画的X轴为 负自己本身（也就是从右往左）
+           android:fromYDelta="0"  开始的Y轴跟结束的Y轴都为0表示Y轴不变
+           android:toYDelta="0"
+    -->
+
+</translate>

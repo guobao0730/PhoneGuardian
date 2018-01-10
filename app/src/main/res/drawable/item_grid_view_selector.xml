@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--GirdView的子条目按下时的背景颜色 -->
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/item_selectorl"
+        ></item>
+
+    <!--GirdView的子条目松开时的背景颜色 -->
+    <item
+        android:state_pressed="false"
+        android:drawable="@android:color/transparent"
+        ></item>
+
+    <!--GirdView的子条目默认的背景颜色 -->
+    <item
+        android:drawable="@android:color/transparent"
+        ></item>
+
+</selector>

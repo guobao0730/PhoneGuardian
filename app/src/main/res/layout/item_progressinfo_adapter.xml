@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/progressinfoAdapter_iv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_call"
+        android:layout_marginLeft="10dp"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/progressinfoAdapter_tv_progressname"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="手机卫士"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/progressinfoAdapter_tv_progressSize"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="7.0MB"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!--实现当点击ListView中item时不响应条目中的CheckBox点击事件
+        android:checked="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"-->
+   <!-- <CheckBox
+        android:id="@+id/progressinfoAdapter_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:checked="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />-->
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/progressinfoAdapter_iv_isChecked"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/set_img_selector"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <include
+        layout="@layout/title_layout"
+        ></include>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_updateSeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_seting_update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动更新设置"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_seting_update_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动更新已开启"
+            android:textSize="12sp"
+            android:layout_below="@id/tv_seting_update_title"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/iv_seting_updata_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/set_img_selector"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_below="@id/tv_seting_update_desc"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/settingActicity_homeLocation_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/settingActicity_homeLocation_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话归属地显示设置"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/settingActicity_homeLocation_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="归属地显示以开启"
+            android:textSize="12sp"
+            android:layout_below="@id/settingActicity_homeLocation_tv_title"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/settingActicity_homeLocation_iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/set_img_selector"
+            android:layout_centerVertical="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_below="@id/settingActicity_homeLocation_tv_desc"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/settingActicity_attributionStyle_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/settingActicity_attributionStyle_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置归属地显示风格"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/settingActicity_attributionStyle_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="透明"
+            android:textSize="12sp"
+            android:layout_below="@id/settingActicity_attributionStyle_tv_title"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/settingActicity_attributionStyle_iv_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_arrows"
+            android:layout_centerVertical="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_below="@id/settingActicity_attributionStyle_tv_desc"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/settingActicity_attributionLocation_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/settingActicity_attributionLocation_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置归属地提示框位置"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/settingActicity_attributionLocation_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位置设置"
+            android:textSize="12sp"
+            android:layout_below="@id/settingActicity_attributionLocation_tv_title"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/settingActicity_attributionLocation_iv_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_arrows"
+            android:layout_centerVertical="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_below="@id/settingActicity_attributionLocation_tv_desc"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settingActicity_blackList_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/settingActicity_blackList_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黑名单拦截设置"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/settingActicity_blackList_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黑名单拦截已关闭"
+            android:textSize="12sp"
+            android:layout_below="@id/settingActicity_blackList_tv_title"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/settingActicity_blackList_iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/set_img_selector"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_below="@id/settingActicity_blackList_tv_desc"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

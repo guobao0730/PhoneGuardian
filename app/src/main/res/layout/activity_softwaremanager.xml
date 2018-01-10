@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+
+    <include
+        layout="@layout/title_layout"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:id="@+id/softwareManagerActivity_tv_memory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机内存可用"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/softwareManagerActivity_tv_sdcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SD卡可用"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/softwareManagerActivity_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+        <TextView
+            android:id="@+id/softwareManagerActivity_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:padding="5dp"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

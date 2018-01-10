@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/commonlyUsedNumberElvAdapter_child_ll"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:paddingLeft="60dp"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
+    >
+
+    <TextView
+        android:id="@+id/commonlyUsedNumberElvAdapter_child_tv_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="麦当劳麦乐送"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/commonlyUsedNumberElvAdapter_child_tv_number"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="4008517517"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+
+
+
+</LinearLayout>

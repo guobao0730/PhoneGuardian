@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/blacklistAdapter_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="18671702891"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/blacklistAdapter_tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="拦截短信"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="right|center_vertical"
+        >
+        <ImageView
+            android:id="@+id/blacklistAdapter_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/delete_selector"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

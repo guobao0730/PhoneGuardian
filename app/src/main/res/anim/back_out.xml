@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="0"
+           android:toXDelta="100%"
+           android:fromYDelta="0"
+           android:toYDelta="0"
+           android:duration="200"
+    >
+
+
+    <!--上一步  页面出去的平移动画 (从左往右平移)-->
+
+</translate>

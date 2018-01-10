@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_layout"
+        ></include>
+
+    <RelativeLayout
+        android:id="@+id/attributionQueryActivity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+        <EditText
+            android:id="@+id/attributionQueryActivity_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入要查询的号码"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11"
+            />
+        <ImageView
+            android:id="@+id/attributionQueryActivity_iv_query"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/search"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/attributionQueryActivity_et"
+            android:background="@android:color/darker_gray"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/attributionQueryActivity_tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

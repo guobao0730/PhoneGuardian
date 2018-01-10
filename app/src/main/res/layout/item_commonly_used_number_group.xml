@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+              android:background="@drawable/listview_item_shape"
+    >
+
+    <TextView
+        android:id="@+id/commonlyUsedNumberElvAdapter_group_tv_index"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+         />
+
+    <TextView
+        android:id="@+id/commonlyUsedNumberElvAdapter_group_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textSize="14dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#333333"
+        android:text="订餐电话"
+        android:singleLine="true"
+        android:ellipsize="end"
+         />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_layout"
+        ></include>
+
+
+    <RelativeLayout
+        android:id="@+id/processSetActivity_rl_systemProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/processSetActivity_systemProcess_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统进程设置"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/processSetActivity_systemProcess_tv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统进程已隐藏"
+            android:textSize="12sp"
+            android:layout_below="@id/processSetActivity_systemProcess_tv_title"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/processSetActivity_systemProcess_iv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/set_img_selector"
+            android:layout_centerVertical="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_below="@id/processSetActivity_systemProcess_tv_switch"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/processSetActivity_rl_lockScreenCleaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/processSetActivity_lockScreenCleaning_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="锁屏清理设置"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/processSetActivity_lockScreenCleaning_tv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="锁屏清理已关闭"
+            android:textSize="12sp"
+            android:layout_below="@id/processSetActivity_lockScreenCleaning_tv_title"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/processSetActivity_lockScreenCleaning_iv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/set_img_selector"
+            android:layout_centerVertical="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            android:layout_below="@id/processSetActivity_lockScreenCleaning_tv_switch"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+    <!--自定义主题实现全屏（细致进度条）-->
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手机卫士"
+        android:padding="20dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/background"
+        />-->
+
+    <!--向上抽取出一个标题的样式-->
+    <style name="TitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/background</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">手机卫士</string>
+
+    <string name="version">郭宝专属</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <!--在设备管理器所显示的内容 -->
+    <string name="device_admin_description">开启后，可以使用手机卫士一键锁屏功能</string>
+    <string name="device_admin">手机卫士</string>
+</resources>

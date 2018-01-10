@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="100%"
+           android:toXDelta="0"
+           android:fromYDelta="0"
+           android:toYDelta="0"
+           android:duration="200"
+    >
+
+    <!--下一步 按钮的 页面进入的平移动画 -->
+    <!--
+    android:fromXDelta="100%"  X轴开始动画的坐标点为自己本身的宽度
+           android:toXDelta="0"  X轴结束的动画坐标点为手机屏幕的左上角
+           android:fromYDelta="0"   Y轴不变
+           android:toYDelta="0"
+           android:duration="500"  动画持续500毫秒
+    -->
+
+
+
+
+
+</translate>

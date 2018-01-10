@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_layout"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/processManagementActivity_tv_processesNumber"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="进程总数"
+            android:textColor="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/processManagementActivity_tv_processes"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="剩余/总共"
+            android:gravity="right"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/processManagementActivity_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></ListView>
+
+        <TextView
+            android:id="@+id/processManagementActivity_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="用户进程"
+            android:background="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:padding="5dp"
+            />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/processManagementActivity_bt_checkall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_selector"
+            />
+        <Button
+            android:id="@+id/processManagementActivity_bt_inverse"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="反选"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_selector"
+            />
+        <Button
+            android:id="@+id/processManagementActivity_bt_clear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="清理"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_selector"
+            />
+        <Button
+            android:id="@+id/processManagementActivity_bt_setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_selector"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

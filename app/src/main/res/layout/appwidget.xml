@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--窗体小部件的布局 -->
+    <LinearLayout
+        android:id="@+id/appwidget_ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/appmgr_onekey_result_btn_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            >
+            <TextView
+                android:id="@+id/appwidget_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在运行的软件：15"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/appwidget_tv_freeMemory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可用内存：549MB"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/icon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机卫士"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/appwidget_bt_clearMaste"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="一键清理"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/button_selector"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
